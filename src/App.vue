@@ -52,7 +52,7 @@ const handleSend = async (value) => {
   // GET和POST两种请求
   // GET直接通过浏览器去访问，只能传输若干个字符串参数
   // POST可以传输一个body(json格式)，对于对象的传输比较方便
-  // **请输入自己的url**
+  // **输入自己的url后，才有响应**
   const res = await axios.request({
     url: "",
     method: "POST",
