@@ -6,7 +6,7 @@
             </a-flex>
         </a-col>
         <a-col :span="20">
-            <a-flex justify="center" style="font-size: 24px;" >华水学生</a-flex>
+            <a-flex justify="center" style="font-size: 24px;" >聊天对象</a-flex>
         </a-col>
         <a-col :span="2" style="font-size: 24px; height: 100%;" align="center" @click="message.info('点击了聊天详情按钮')">
             <EllipsisOutlined />

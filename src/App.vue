@@ -52,13 +52,14 @@ const handleSend = async (value) => {
   // GET和POST两种请求
   // GET直接通过浏览器去访问，只能传输若干个字符串参数
   // POST可以传输一个body(json格式)，对于对象的传输比较方便
+  // **请输入自己的url**
   const res = await axios.request({
-    url: "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/ernie-speed-128k?access_token=24.a8780df455ef309deb00373f949ac0ac.2592000.1719987880.282335-77977889",
+    url: "",
     method: "POST",
     data: {
       // body的内容
       messages,
-      system: "注意：请不要使用Markdown语法。请记住你是华北水利水电大学的一名学生，就读于计算机科学与技术专业",
+      system: "注意：请不要使用Markdown语法。请记住你是一名大学生，就读于计算机科学与技术专业",
     },
   });
   // 记录res
