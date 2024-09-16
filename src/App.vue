@@ -52,14 +52,14 @@ const handleSend = async (value) => {
   // GET和POST两种请求
   // GET直接通过浏览器去访问，只能传输若干个字符串参数
   // POST可以传输一个body(json格式)，对于对象的传输比较方便
-  // **输入自己的url后，才有响应**
+  // **输入url后，才会有响应**
   const res = await axios.request({
     url: "",
     method: "POST",
     data: {
       // body的内容
       messages,
-      system: "注意：请不要使用Markdown语法。请记住你是一名大学生，就读于计算机科学与技术专业",
+      system: "Please do not use Markdown syntax. Remember that you are a university student majoring in Computer Science and Technology.",
     },
   });
   // 记录res
